@@ -1,6 +1,7 @@
 body{
     margin:0;
     padding: 0;
+    width: 100%;
     font-family: 'PT Sans Narrow', sans-serif;
 }
 .linha{
@@ -21,8 +22,8 @@ body{
     align-items: center;
 }
 .alinhamento-horizontal{
-    justify-content: center;
     display: flex;
+    justify-content: center;
 } 
 .img-pequena{
     width: 50%;
@@ -48,7 +49,13 @@ li a{
     color: black;
 }
 .background-cabeca{
+    padding: 10px;
     background-image: url('../img/img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
 }
 #cabecalho h1,span{
     margin: 10px;
@@ -56,7 +63,12 @@ li a{
     color:#002855;
 }
 #cabecalho p{
+    text-align: justify;
     margin: 10px;
     font-size: 25px;
     color:#002855;
+}
+#comeco-banner{
+    color: white;
+    background-color: #002855;
 }
